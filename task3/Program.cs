@@ -7,7 +7,7 @@ double[] arrayDouble(int n = 10, int min = -100, int max = 100)
 {
     double[] array = new double[n];
     min *= 10000;
-    max = (max) * 10000;
+    max *= 10000;
     for (int i = 0; i < n; i++)
     {
         int num = new Random().Next(min, max + 1);
