@@ -6,12 +6,12 @@
 [-4, -6, 89, 6] -> 0
 */
 
-int[] arrayNumbers(int n = 10, int min = -100, int max = 101)
+int[] arrayNumbers(int n = 10, int min = -100, int max = 100)
 {
     int[] array =new int [n];
     for (int i = 0; i < n; i++)
     {
-        array[i] = new Random().Next(min, max);
+        array[i] = new Random().Next(min, max + 1);
     }
     return array;
 }
